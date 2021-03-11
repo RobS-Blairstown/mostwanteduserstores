@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>devCodeCamp &middot; Most Wanted</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <form id="nameForm">
@@ -12,7 +13,21 @@
         <input type="text" id="lname" name="lname" value="Madden"><br><br>
         <input type="button" onclick="searchByName()" value="Submit">
     </form> 
-      
+    <table style="width:100%">
+      <tr>
+        <th>ID</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Gender</th>
+        <th>DOB</th>
+        <th>Height</th>
+        <th>Weight</th>
+        <th>Eye Color</th>
+        <th>Occupation</th>
+        <th>Parents</th>
+        <th>Current Spouse</th>
+      </tr>
+    </table>
 
     <script src="data.js"></script>
     <script src="app.js"></script>
