@@ -9,42 +9,77 @@
     <form id="nameForm">
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname" value="John"><br>
+
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" name="lname" value="Doe"><br>
-        <label for="idnumber">Identification number:</label><br>
-        <input type="text" id="idnumber" name="idnumber" value="123-456-789"><br>
-        <label for="gender">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
+    </form>
+
+    <form id="idForm">
+        <label for="id">Identification number:</label><br>
+        <input type="text" id="id" name="id" value="123456789"><br>
+    </form>  
+
+    <form id="genderForm">
+        <label for="gender">Gender:</label><br>
+        <input type="text" id="gender" name="gender" value="Male/Female"><br>
+    </form>
+
+    <form id="dobForm">
+        <label for="dob">Date of Birth:</label><br>
+        <input type="text" id="dob" name="dob" value="xx-xx-xxxx"><br>
+    </form>
+
+    <form id="heightForm">
+        <label for="pheight">Height:</label><br>
+        <input type="text" id="pheight" name="pheight" value="Inches..."><br>
+    </form>
+
+    <form id="weightForm">
+        <label for="pweight">Weight:</label><br>
+        <input type="text" id="pweight" name="pweight" value="Lbs..."><br>
+    </form>
+
+    <form id="eyeColorForm">
+        <label for="eyecolor">Eye Color:</label><br>
+        <input type="text" id="eyecolor" name="eyecolor" value="ex.Hazel/Green/Blue"><br>
+    </form>
+
+    <form id="occupationForm">
+        <label for="occupation">Occupation:</label><br>
+        <input type="text" id="occupation" name="occupation" value="ex.Doctor/Lawyer"><br>
+    </form>
+
+    <form id="parentsForm">
+        <label for="parents">Parents:</label><br>
+        <input type="text" id="parents" name="parents" value="Parents..."><br>
+    </form>
+
+    <form id="spouseForm">
+        <label for="cspouse">Current Spouse:</label><br>
+        <input type="text" id="cspouse" name="cspouse" value="Wife/Husband"><br>
+    </form>
+
         <input type="button" onclick="searchByName()" value="Submit">
-    </form> 
+        
     <table id="table" style="width:100%">
-      <tr>
-        <th>ID</th>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Gender</th>
-        <th>DOB</th>
-        <th>Height</th>
-        <th>Weight</th>
-        <th>Eye Color</th>
-        <th>Occupation</th>
-        <th>Parents</th>
-        <th>Current Spouse</th>
-      </tr>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Gender</th>
+          <th>DOB</th>
+          <th>Height</th>
+          <th>Weight</th>
+          <th>Eye Color</th>
+          <th>Occupation</th>
+          <th>Parents</th>
+          <th>Current Spouse</th>
+        </tr>
+      </thead> 
+      <tbody>
+
+      </tbody> 
     </table>
 
     <script src="data.js"></script>
