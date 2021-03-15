@@ -135,3 +135,36 @@ function searchByOccupation(){
     }
 }
 
+function searchByParents(){
+    let parentsnput = document.forms['parentsForm']['parents'].value;
+
+    let filteredPeople = people.filter(function (person) {
+        if (person.parents === parentsInput){
+        return true;
+        }
+        return false;
+    });
+
+    if(filteredPeople.length > 0){
+        console.log(filteredPeople);
+    }else{
+        console.log("These parents were not found in the search.");
+    }
+}
+
+function searchById(){
+    let idInput = document.forms['idForm']['id'].value;
+
+    let filteredPeople = people.filter(function (person) {
+        if (person.id === idInput){
+        return true;
+        }
+        return false;
+    });
+
+    if(filteredPeople.length > 0){
+        console.log(filteredPeople);
+    }else{
+        console.log("There is no one with this ID Number.");
+    }
+}
