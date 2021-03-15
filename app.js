@@ -5,6 +5,9 @@ function searchByName(){
     let firstNameInput = document.forms['nameForm']['fname'].value;
     let lastNameInput = document.forms['nameForm']['lname'].value;
 
+    // firstLetterUppercase(firstNameInput);
+    // firstLetterUppercase(lastNameInput); need to make inputs first letter capital because system wont read if input is all lowercase.
+
     // "people" is coming from the data.js file. We have access to it within this JavaScript file.
     let filteredPeople = people.filter(function (person) {
         if(person.firstName === firstNameInput && person.lastName === lastNameInput){
@@ -20,7 +23,10 @@ function searchByName(){
     }
 }
 
-
+function firstLetterUppercase(word){
+    var firstLetter = word.charAt(0).toUpperCase;
+    return firstLetter;
+}
 
 
 function searchById(){
