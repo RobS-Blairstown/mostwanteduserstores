@@ -152,11 +152,11 @@ function searchByParents(){
     }
 }
 
-function searchById(){
-    let idInput = document.forms['idForm']['id'].value;
+function searchBySpouse(){
+    let spouseInput = document.forms['spouseForm']['spouse'].value;
 
     let filteredPeople = people.filter(function (person) {
-        if (person.id === idInput){
+        if (person.spouse === spouseInput){
         return true;
         }
         return false;
@@ -165,6 +165,7 @@ function searchById(){
     if(filteredPeople.length > 0){
         console.log(filteredPeople);
     }else{
-        console.log("There is no one with this ID Number.");
+        console.log("There is no one with this spouse.");
     }
 }
+
