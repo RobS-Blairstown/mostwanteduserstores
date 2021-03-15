@@ -118,11 +118,11 @@ function searchByEyeColor(){
     }
 }
 
-function searchById(){
-    let idInput = document.forms['idForm']['id'].value;
+function searchByOccupation(){
+    let occupationInput = document.forms['occupationForm']['occupation'].value;
 
     let filteredPeople = people.filter(function (person) {
-        if (person.id === idInput){
+        if (person.occupation === occupationInput){
         return true;
         }
         return false;
@@ -131,6 +131,7 @@ function searchById(){
     if(filteredPeople.length > 0){
         console.log(filteredPeople);
     }else{
-        console.log("There is no one with this ID Number.");
+        console.log("There is no one with this particular occupation.");
     }
 }
+
