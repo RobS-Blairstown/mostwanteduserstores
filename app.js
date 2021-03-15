@@ -20,11 +20,14 @@ function searchByName(){
     }
 }
 
+
+
+
 function searchById(){
-    let idInput = document.forms['idForm']['id'].value;
+    let idInput = document.forms['idForm']['idnumber'].value;
 
     let filteredPeople = people.filter(function (person) {
-        if (person.id === idInput){
+        if (person.idnumber === idInput){
         return true;
         }
         return false;
@@ -37,17 +40,23 @@ function searchById(){
     }
 }
 
-function searchGender(){
+
+
+
+function searchByGender(){
     let genderInput = document.forms['genderForm']['gender'].value;
 
     let filteredPeople = people.filter(function (person) {
-        if (person.id === genderInput){
+        if (person.gender === genderInput){
         return true;
         }
         return false;
     });
     console.log(filteredPeople);
 }
+
+
+
 
 function searchByDob(){
     let dobInput = document.forms['dobForm']['dob'].value;
@@ -65,6 +74,9 @@ function searchByDob(){
         console.log("There is no one with this Date of Birth.");
     }
 }
+
+
+
 
 function searchByHeight(){
     let heightInput = document.forms['heightForm']['pheight'].value;
@@ -84,6 +96,9 @@ function searchByHeight(){
 }
 
 
+
+
+
 function searchByWeight(){
     let weightInput = document.forms['weightForm']['pweight'].value;
 
@@ -100,6 +115,9 @@ function searchByWeight(){
         console.log("There is no one who weighs this amount.");
     }
 }
+
+
+
 
 function searchByEyeColor(){
     let eyeColorInput = document.forms['eyeColorForm']['eyecolor'].value;
@@ -118,6 +136,9 @@ function searchByEyeColor(){
     }
 }
 
+
+
+
 function searchByOccupation(){
     let occupationInput = document.forms['occupationForm']['occupation'].value;
 
@@ -135,6 +156,9 @@ function searchByOccupation(){
     }
 }
 
+
+
+
 function searchByParents(){
     let parentsnput = document.forms['parentsForm']['parents'].value;
 
@@ -151,6 +175,9 @@ function searchByParents(){
         console.log("These parents were not found in the search.");
     }
 }
+
+
+
 
 function searchBySpouse(){
     let spouseInput = document.forms['spouseForm']['spouse'].value;
