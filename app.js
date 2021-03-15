@@ -49,3 +49,88 @@ function searchGender(){
     console.log(filteredPeople);
 }
 
+function searchByDob(){
+    let dobInput = document.forms['dobForm']['dob'].value;
+
+    let filteredPeople = people.filter(function (person) {
+        if (person.dob === dobInput){
+        return true;
+        }
+        return false;
+    });
+
+    if(filteredPeople.length > 0){
+        console.log(filteredPeople);
+    }else{
+        console.log("There is no one with this Date of Birth.");
+    }
+}
+
+function searchByHeight(){
+    let heightInput = document.forms['heightForm']['pheight'].value;
+
+    let filteredPeople = people.filter(function (person) {
+        if (person.pheight === heightInput){
+        return true;
+        }
+        return false;
+    });
+
+    if(filteredPeople.length > 0){
+        console.log(filteredPeople);
+    }else{
+        console.log("There is no one standing at this height.");
+    }
+}
+
+
+function searchByWeight(){
+    let weightInput = document.forms['weightForm']['pweight'].value;
+
+    let filteredPeople = people.filter(function (person) {
+        if (person.pweight === weightInput){
+        return true;
+        }
+        return false;
+    });
+
+    if(filteredPeople.length > 0){
+        console.log(filteredPeople);
+    }else{
+        console.log("There is no one who weighs this amount.");
+    }
+}
+
+function searchByEyeColor(){
+    let eyeColorInput = document.forms['eyeColorForm']['eyecolor'].value;
+
+    let filteredPeople = people.filter(function (person) {
+        if (person.eyecolor === eyeColorInput){
+        return true;
+        }
+        return false;
+    });
+
+    if(filteredPeople.length > 0){
+        console.log(filteredPeople);
+    }else{
+        console.log("There is no one with this eye color.");
+    }
+}
+
+function searchById(){
+    let idInput = document.forms['idForm']['id'].value;
+
+    let filteredPeople = people.filter(function (person) {
+        if (person.id === idInput){
+        return true;
+        }
+        return false;
+    });
+
+    if(filteredPeople.length > 0){
+        console.log(filteredPeople);
+    }else{
+        console.log("There is no one with this ID Number.");
+    }
+}
