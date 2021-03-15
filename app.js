@@ -24,10 +24,10 @@ function searchByName(){
 
 
 function searchById(){
-    let idInput = document.forms['idForm']['idnumber'].value;
+    let idInput = document.forms['idForm']['id'].value;
 
     let filteredPeople = people.filter(function (person) {
-        if (person.idnumber === idInput){
+        if (person.id == idInput){
         return true;
         }
         return false;
@@ -44,7 +44,7 @@ function searchById(){
 
 
 function searchByGender(){
-    let genderInput = document.forms['genderForm']['gender'].value;
+    let genderInput = document.forms['genderForm']['gender'].value.toLowerCase();
 
     let filteredPeople = people.filter(function (person) {
         if (person.gender === genderInput){
@@ -62,7 +62,7 @@ function searchByDob(){
     let dobInput = document.forms['dobForm']['dob'].value;
 
     let filteredPeople = people.filter(function (person) {
-        if (person.dob === dobInput){
+        if (person.dob == dobInput){
         return true;
         }
         return false;
@@ -79,10 +79,10 @@ function searchByDob(){
 
 
 function searchByHeight(){
-    let heightInput = document.forms['heightForm']['pheight'].value;
+    let heightInput = document.forms['heightForm']['height'].value;
 
     let filteredPeople = people.filter(function (person) {
-        if (person.pheight === heightInput){
+        if (person.height == heightInput){
         return true;
         }
         return false;
@@ -103,7 +103,7 @@ function searchByWeight(){
     let weightInput = document.forms['weightForm']['pweight'].value;
 
     let filteredPeople = people.filter(function (person) {
-        if (person.pweight === weightInput){
+        if (person.pweight == weightInput){
         return true;
         }
         return false;
@@ -123,7 +123,7 @@ function searchByEyeColor(){
     let eyeColorInput = document.forms['eyeColorForm']['eyecolor'].value;
 
     let filteredPeople = people.filter(function (person) {
-        if (person.eyecolor === eyeColorInput){
+        if (person.eyecolor == eyeColorInput){
         return true;
         }
         return false;
@@ -183,7 +183,7 @@ function searchBySpouse(){
     let spouseInput = document.forms['spouseForm']['spouse'].value;
 
     let filteredPeople = people.filter(function (person) {
-        if (person.spouse === spouseInput){
+        if (person.spouse == spouseInput){
         return true;
         }
         return false;
