@@ -5,8 +5,8 @@ function searchByName(){
     let firstNameInput = document.forms['nameForm']['fname'].value;
     let lastNameInput = document.forms['nameForm']['lname'].value;
 
-    // firstLetterUppercase(firstNameInput);
-    // firstLetterUppercase(lastNameInput); need to make inputs first letter capital because system wont read if input is all lowercase.
+    firstNameInput = firstLetterUppercase(firstNameInput);
+    lastNameInput = firstLetterUppercase(lastNameInput); //need to make inputs first letter capital because system wont read if input is all lowercase.
 
     // "people" is coming from the data.js file. We have access to it within this JavaScript file.
     let filteredPeople = people.filter(function (person) {
@@ -19,13 +19,20 @@ function searchByName(){
     if(filteredPeople.length > 0){
         helperFunction(filteredPeople);
     }else{
-       console.log("There is nobody with this name.");
+        console.log("There is nobody with this name.")
     }
 }
 
 function firstLetterUppercase(word){
-    var firstLetter = word.charAt(0).toUpperCase;
-    return firstLetter;
+    let newWord = "";
+    for(let i = 0; i<word.length; i++){
+        if(i == 0){
+            newWord = word[i].toUpperCase();
+        }else{
+            newWord += word[i].toLowerCase();
+        }
+    }
+    return newWord;
 }
 
 
